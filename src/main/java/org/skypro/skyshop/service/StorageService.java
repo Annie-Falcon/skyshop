@@ -70,4 +70,8 @@ public class StorageService {
         storageArticle.put(arBanana.getId(), arBanana);
         storageArticle.put(arApple.getId(), arApple);
     }
+
+    public Optional<Product> getProductById(UUID id) {
+        return Optional.ofNullable(storageProduct.get(id));
+    }
 }
