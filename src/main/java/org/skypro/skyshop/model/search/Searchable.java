@@ -6,7 +6,6 @@ import java.util.UUID;
 
 public interface Searchable {
 
-    @JsonIgnore
     default String getStringRepresentation() {
         return getNameSearchable() + " - " + getTypeSearchable();
     }
